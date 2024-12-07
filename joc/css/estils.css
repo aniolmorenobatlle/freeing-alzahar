@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+a { 
+    text-decoration: none; 
+    color: #c9c9c9;
+}
+
+.contenidor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titul {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.demo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+}
+
+.trailer {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Trailer */
+
+.contenidor-trailer{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.trailer-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.trailer-portafolio{
+    background: #ffffff;
+}
+
+/* Video monedes */
+
+.contenidor-monedes{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.monedes-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.monedes-portafolio{
+    background: #f2f2f2;
+}
+
+/* DEMO */
+
+.contenidor-demo{
+    text-align: center;
+}
+
+.demo-port{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-portafolio{
+    background: #f2f2f2;
+}
+
+.contenidor-demo {
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Mecaniques */
+
+.contenidor-mecaniques{
+    text-align: center;
+}
+
+.mecaniques-port{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mecaniques-portafolio{
+    background: #ffffff;
+}
+
+.contenidor-mecaniques {
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #90f90600, #299e9800);
+    background: linear-gradient(to right, #90f90600, #299e9800);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .texts-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texts-header h1{
+    font-size: 60px;
+    color:#fff;
+}
+
+.texts-header h2{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lucida Grande';
+    color:#fff;
+}
+
+.texts-header video { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(fondo1.mp4) no-repeat;
+}  
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosaltres{
+    padding: 30px 0 60px 0;
+}
+.contenidor-sobre-nosaltres{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-nosaltres .contingut-texts{
+    width: 48%;
+}
+
+.contingut-texts h3{
+    margin-bottom: 15px;
+}
+
+.contingut-texts h3 span{
+    background: #1FB83C;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 #00000080;
+    margin-right: 5px;
+}
+
+.contingut-texts p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imatge-port{
+    width: 35%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imatge-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    background-color: #4b0684b3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 100%;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imatge-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Taula */
+
+.center-table
+{ 
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenidor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #1FB83C;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titul-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenidor-sobre-nosaltres{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosaltres .contenido-texts{
+        width: 90%;
+    }
+
+    .imatge-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imatge-port{
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .texts-header h1{
+        font-size: 35px;
+    }
+
+    .texts-header h2{
+        font-size: 20px;
+    }
+
+    /* Galeria */
+
+    .imatge-port{
+        width: 95%;
+    }
+
+    /* Footer */
+
+    .contenidor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titul-final{
+        font-size: 20px;
+    }
+}
